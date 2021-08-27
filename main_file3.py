@@ -366,6 +366,7 @@ def passone():
 
 
                 elif (type == "E"):
+                    op_table = opcode_table2.asd(registers[R0], registers[R1], registers[R2], registers[R3], registers[R4], registers[R5], registers[R6], registers[FLAGS])
                     if (instruction == "jmp"):
                         use = program[i][8:]
                         use = int(use)
